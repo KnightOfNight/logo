@@ -9,11 +9,11 @@ logo( 5001, "sharon.png", [0xE3, 0xA6, 0xEC] );
 
 
 
-$im_x = 1600;
-$im_y = 900;
+$im_x = 3200;
+$im_y = 1800;
 
-$logo_x = 600;
-$logo_y = 600;
+$logo_x = 1000;
+$logo_y = 1000;
 
 $img = imagecreate( $im_x, $im_y );
 
