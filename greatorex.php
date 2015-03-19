@@ -4,9 +4,11 @@
 
 require("logo.php");
 
-logo(5001, "chey.png", [0, 0, 0]);
-logo(5001, "sharon.png", [0xE3, 0xA6, 0xEC]);
 
+logo(501, "chey501.png", [0, 0, 0]);
+logo(1001, "chey1001.png", [0, 0, 0]);
+logo(5001, "chey5001.png", [0, 0, 0]);
+logo(5001, "sharon.png", [0xE3, 0xA6, 0xEC]);
 
 
 $im_x = 3200;
@@ -34,5 +36,7 @@ imagecopyresampled($img, $logo,
 
 imagepng($img, "desktop.png", 0);
 
+
 exit(0);
+
 
