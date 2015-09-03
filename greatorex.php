@@ -4,10 +4,16 @@
 
 require("logo.php");
 
+$sizes = array(501, 1001, 2001, 5001);
 
-logo(501, "chey501.png", [0, 0, 0]);
-logo(1001, "chey1001.png", [0, 0, 0]);
-logo(5001, "chey5001.png", [0, 0, 0]);
+foreach ($sizes as $size) {
+    $name = 'chey' . $size . '.png';
+
+    $color = array(0, 0, 0);
+
+    logo($size, $name, $color);
+}
+
 logo(5001, "sharon.png", [0xE3, 0xA6, 0xEC]);
 
 
@@ -25,7 +31,7 @@ $gray = imagecolorallocate($img, 128, 128, 128);
 
 imagefill($img, 0, 0, $gray);
 
-$logo = imagecreatefrompng("chey.png");
+$logo = imagecreatefrompng("chey2001.png");
 
 imagecopyresampled($img, $logo,
 	($im_x / 2) - ($logo_x / 2), ($im_y / 2) - ($logo_y / 2),
