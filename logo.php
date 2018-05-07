@@ -12,7 +12,7 @@ function logo($size = NULL, $file = NULL, array $fg_color_a = NULL, array $bg_co
 	}
 
 	if (is_null($file)) {
-		$file = "logo.png";
+		$file = "logo.jpg";
 	}
 
 	if (is_null($fg_color_a)) {
@@ -102,6 +102,6 @@ function logo($size = NULL, $file = NULL, array $fg_color_a = NULL, array $bg_co
 	}
 
 
-	imagepng($img, $file, 0);
+	imagejpeg($img, $file, 0);
 
 }
